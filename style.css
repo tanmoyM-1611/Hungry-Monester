@@ -23,9 +23,10 @@
         border: 3px solid black;
         border-radius: 20px;
         /* padding: 20px; */ 
-        margin:20px 50px;
+        margin:auto;
         width: 300px;
         background: #F8F7F5;
+        
     }
 .ingreduents{
  padding-left: 10px;
