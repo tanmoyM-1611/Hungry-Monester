@@ -4,7 +4,9 @@ const foodsDiv=document.getElementById("main-div");
 document.getElementById("button").addEventListener("click",function(){
     document.getElementById('main-div').style.display = 'grid';
     document.getElementById('main-div').innerHTML = "";
+    document.getElementById('secondary-div').innerHTML="";
     document.getElementById('secondary-div').style.display = 'none';
+    
    
     const inputValue=document.getElementById("input").value;
     if(inputValue!=""){
