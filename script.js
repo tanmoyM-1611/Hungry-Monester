@@ -6,12 +6,18 @@ document.getElementById("button").addEventListener("click",function(){
     document.getElementById('main-div').innerHTML = "";
     document.getElementById('secondary-div').style.display = 'none';
    
-    const inputValue=document.getElementById("input");
-     fetch('https://www.themealdb.com/api/json/v1/1/search.php?s='+inputValue.value+'')
+    const inputValue=document.getElementById("input").value;
+    if(inputValue!=""){
+     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputValue}`)
     .then(res=>res.json())
     .then(data=>displayFood(data))
-
- })
+    .catch(error => alert("Sorrry! , we didn't find this type of food"))
+}
+else
+{
+    alert("Please enter the name of the food which you want...")
+}
+ }) 
 
 const displayFood=foods=>{
    

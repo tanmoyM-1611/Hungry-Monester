@@ -1,3 +1,7 @@
+.navbar-nav{
+    margin-left: auto;
+}
+
 #main-div{
    
     grid-template-columns: repeat(3,1fr);
@@ -9,6 +13,8 @@
         /* padding: 20px; */
         /* margin:20px 50px; */
         text-align: center;
+        /* margin: auto; */
+       
         width: 300px;
         background: #F8F7F5;
     }
